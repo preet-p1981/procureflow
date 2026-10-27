@@ -71,6 +71,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
             case NOT_FOUND -> HttpStatus.NOT_FOUND;
             case CONFLICT -> HttpStatus.CONFLICT;
             case BUSINESS_RULE -> HttpStatus.UNPROCESSABLE_ENTITY;
+            case UNAUTHENTICATED -> HttpStatus.UNAUTHORIZED;
+            case FORBIDDEN -> HttpStatus.FORBIDDEN;
         };
     }
 
