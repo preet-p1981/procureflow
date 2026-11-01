@@ -11,7 +11,9 @@ public enum IdentityError implements ErrorCode {
     USER_NOT_FOUND(ErrorType.NOT_FOUND),
     INVALID_CREDENTIALS(ErrorType.UNAUTHENTICATED),
     ACCOUNT_LOCKED(ErrorType.FORBIDDEN),
-    ACCOUNT_DISABLED(ErrorType.FORBIDDEN);
+    ACCOUNT_DISABLED(ErrorType.FORBIDDEN),
+    INVALID_REFRESH_TOKEN(ErrorType.UNAUTHENTICATED),
+    REFRESH_TOKEN_REUSED(ErrorType.UNAUTHENTICATED);
 
     private final ErrorType type;
 
