@@ -11,7 +11,11 @@ public enum CatalogError implements ErrorCode {
     INVALID_BUDGET(ErrorType.VALIDATION),
     BUDGET_EXCEEDED(ErrorType.BUSINESS_RULE),
     CATEGORY_NOT_FOUND(ErrorType.NOT_FOUND),
-    CATEGORY_CODE_EXISTS(ErrorType.CONFLICT);
+    CATEGORY_CODE_EXISTS(ErrorType.CONFLICT),
+    ITEM_NOT_FOUND(ErrorType.NOT_FOUND),
+    ITEM_SKU_EXISTS(ErrorType.CONFLICT),
+    CATEGORY_INACTIVE(ErrorType.BUSINESS_RULE),
+    INVALID_ITEM(ErrorType.VALIDATION);
 
     private final ErrorType type;
 
